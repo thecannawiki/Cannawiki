@@ -20,3 +20,14 @@ $wgSitename = "CannaWiki";
 
 ## The protocol and server name to use in fully-qualified URLs
 $wgServer = "https://cannawiki.herokuapp.com/";
+
+
+
+## Database settings
+$url = parse_url(getenv("CLEARDB_DATABASE_URL"));
+
+$wgDBtype = "mysql";
+$wgDBserver = $url["host"];
+$wgDBname = substr($url["path"], 1);
+$wgDBuser = $url["user"];
+$wgDBpassword = $url["pass"];
