@@ -113,13 +113,13 @@ $wgDiff3 = "";
 
 ## Default skin: you can change the default skin. Use the internal symbolic
 ## names, ie 'vector', 'monobook':
-$wgDefaultSkin = "vector";
+#$wgDefaultSkin = "vector";
 
 # Enabled skins.
 # The following skins were automatically enabled:
 #wfLoadSkin( 'MonoBook' );
 #wfLoadSkin( 'Timeless' );
-wfLoadSkin( 'Vector' );
+#wfLoadSkin( 'Vector' );
 #wfLoadSkin( 'MinervaNeue' );
 #wfLoadSkin( 'Tweeki' );
 
@@ -149,7 +149,7 @@ $wgGroupPermissions['*']['edit'] = false;
 #START_END_MARKER;
 
 
-// Discord bot
+# Discord bot
 #wfLoadExtension( 'Discord' );
 #$wgDiscordWebhookURL = ['https://discordapp.com/api/webhooks/937367961537220608/BVAroukUFSVv6M4D69cLde6nkkTpX3L07frhvs9nnDLAPHD-FdPPSZiNOQL8wtL61HOC'];
 
