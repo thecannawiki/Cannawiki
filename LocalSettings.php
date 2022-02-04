@@ -20,6 +20,7 @@ $wgSitename = "CannaWiki";
 ## The protocol and server name to use in fully-qualified URLs
 $wgServer = "https://cannawiki.herokuapp.com/";
 
+/* 
 ## The URL path to static resources (images, scripts, etc.)
 $wgResourceBasePath = $wgScriptPath;
 
@@ -159,4 +160,5 @@ $wgGroupPermissions['*']['edit'] = false;
 
 #wfLoadExtension( 'VisualEditor' );
 
-#wfLoadExtension( 'SimpleBatchUpload' );
+#wfLoadExtension( 'SimpleBatchUpload' ); 
+*/
