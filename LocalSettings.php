@@ -41,11 +41,13 @@ $wgEnotifWatchlist = false; # UPO
 $wgEmailAuthentication = true;
 
 ## Database settings
+/*
 $wgDBtype = "mysql";
 $wgDBserver = env("CLEARDB_DATABASE_URL");
 $wgDBname = "cannawiki";
 $wgDBuser = "root";
 $wgDBpassword = "";
+
 
 # MySQL specific settings
 $wgDBprefix = "";
@@ -56,6 +58,8 @@ $wgDBTableOptions = "ENGINE=InnoDB, DEFAULT CHARSET=binary";
 # Shared database table
 # This has no effect unless $wgSharedDB is also set.
 $wgSharedTables[] = "actor";
+
+*/
 
 ## Shared memory settings
 $wgMainCacheType = CACHE_NONE;
