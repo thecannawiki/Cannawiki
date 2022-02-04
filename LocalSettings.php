@@ -18,7 +18,7 @@ $wgSitename = "CannaWiki";
 #$wgFavicon = "/CannaWiki/favicon.ico";
 
 ## The protocol and server name to use in fully-qualified URLs
-#$wgServer = "https://cannawiki.net";
+$wgServer = "https://cannawiki.herokuapp.com/";
 
 ## The URL path to static resources (images, scripts, etc.)
 $wgResourceBasePath = $wgScriptPath;
@@ -116,25 +116,25 @@ $wgDefaultSkin = "vector";
 
 # Enabled skins.
 # The following skins were automatically enabled:
-wfLoadSkin( 'MonoBook' );
-wfLoadSkin( 'Timeless' );
+#wfLoadSkin( 'MonoBook' );
+#wfLoadSkin( 'Timeless' );
 wfLoadSkin( 'Vector' );
-wfLoadSkin( 'MinervaNeue' );
-wfLoadSkin( 'Tweeki' );
+#wfLoadSkin( 'MinervaNeue' );
+#wfLoadSkin( 'Tweeki' );
 
 
 # End of automatically generated settings.
 # Add more configuration options below.
-wfLoadExtension( 'Moderation' );
-wfLoadExtension( 'Cite' );
-wfLoadExtension( 'MobileFrontend' );
-$wgMFDefaultSkinClass = 'SkinMinerva';
+#wfLoadExtension( 'Moderation' );
+#wfLoadExtension( 'Cite' );
+#wfLoadExtension( 'MobileFrontend' );
+#$wgMFDefaultSkinClass = 'SkinMinerva';
 
 
 $wgGroupPermissions['*']['edit'] = false;
 
 
-require_once "$IP/extensions/HeadScript/HeadScript.php";
+#require_once "$IP/extensions/HeadScript/HeadScript.php";
 
 
 #$wgHeadScriptCode = <<<'START_END_MARKER'
@@ -149,14 +149,14 @@ require_once "$IP/extensions/HeadScript/HeadScript.php";
 
 
 // Discord bot
-wfLoadExtension( 'Discord' );
-$wgDiscordWebhookURL = ['https://discordapp.com/api/webhooks/937367961537220608/BVAroukUFSVv6M4D69cLde6nkkTpX3L07frhvs9nnDLAPHD-FdPPSZiNOQL8wtL61HOC'];
+#wfLoadExtension( 'Discord' );
+#$wgDiscordWebhookURL = ['https://discordapp.com/api/webhooks/937367961537220608/BVAroukUFSVv6M4D69cLde6nkkTpX3L07frhvs9nnDLAPHD-FdPPSZiNOQL8wtL61HOC'];
 
 
-wfLoadExtension( 'WebToolsManager' );
+#wfLoadExtension( 'WebToolsManager' );
 
-wfLoadExtension( 'GoogleRichCards' );
+#wfLoadExtension( 'GoogleRichCards' );
 
-wfLoadExtension( 'VisualEditor' );
+#wfLoadExtension( 'VisualEditor' );
 
-wfLoadExtension( 'SimpleBatchUpload' );
+#wfLoadExtension( 'SimpleBatchUpload' );
