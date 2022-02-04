@@ -97,7 +97,7 @@ $wgAuthenticationTokenVersion = "1";
 
 # Site upgrade key. Must be set to a string (default provided) to turn on the
 # web installer while LocalSettings.php is in place
-$wgUpgradeKey = "46d61dc2c31eee3e";
+$wgUpgradeKey = env("UPGRADE_KEY");;
 
 ## For attaching licensing metadata to pages, and displaying an
 ## appropriate copyright notice / icon. GNU Free Documentation
@@ -137,15 +137,15 @@ $wgGroupPermissions['*']['edit'] = false;
 require_once "$IP/extensions/HeadScript/HeadScript.php";
 
 
-$wgHeadScriptCode = <<<'START_END_MARKER'
-<script async src="https://www.googletagmanager.com/gtag/js?id="+env("GOOGLE_ANALYTICS_KEY")></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', env("GOOGLE_ANALYTICS_KEY"));
-</script>
-START_END_MARKER;
+#$wgHeadScriptCode = <<<'START_END_MARKER'
+#<script async src="https://www.googletagmanager.com/gtag/js?id="+env("GOOGLE_ANALYTICS_KEY")></script>
+#<script>
+#  window.dataLayer = window.dataLayer || [];
+#  function gtag(){dataLayer.push(arguments);}
+#  gtag('js', new Date());
+#  gtag('config', env("GOOGLE_ANALYTICS_KEY"));
+#</script>
+#START_END_MARKER;
 
 
 // Discord bot
