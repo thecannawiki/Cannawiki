@@ -31,3 +31,7 @@ $wgDBserver = $url["host"];
 $wgDBname = substr($url["path"], 1);
 $wgDBuser = $url["user"];
 $wgDBpassword = $url["pass"];
+
+$wgShowExceptionDetails = true;
+$wgShowDBErrorBacktrace = true;
+$wgShowSQLErrors = true;
