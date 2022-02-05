@@ -21,7 +21,7 @@ $wgFavicon = "/CannaWiki/favicon.ico";
 ## The protocol and server name to use in fully-qualified URLs
 $wgServer = "https://cannawiki.herokuapp.com/";
 
-
+$wgResourceBasePath = $wgScriptPath;
 
 ## Database settings
 
@@ -36,6 +36,3 @@ $wgShowDBErrorBacktrace = true;
 $wgShowSQLErrors = true;
 
 
-$wgDefaultSkin = 'Vector';
-wfLoadSkin( 'Vector' );
- 
