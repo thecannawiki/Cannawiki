@@ -38,4 +38,3 @@ $wgShowSQLErrors = true;
 
 $wgStyleDirectory = "{$IP}/skins";
 
-wfLoadSkin( 'Vector' );
