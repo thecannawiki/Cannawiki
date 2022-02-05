@@ -36,5 +36,6 @@ $wgShowDBErrorBacktrace = true;
 $wgShowSQLErrors = true;
 
 
-$wgStyleDirectory = "{$IP}/skins";
+#$wgStyleDirectory = "{$IP}/skins";
 
+$wgStylePath = "$wgScriptPath/skins";
