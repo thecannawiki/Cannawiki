@@ -21,6 +21,7 @@
 	},
 	"prefer-stable": true,
 	"require": {
+		"mediawiki/vector-skin": "dev-wmf/1.30.0-wmf.2",
 		"composer/semver": "3.2.4",
 		"cssjanus/cssjanus": "2.1.0",
 		"ext-ctype": "*",

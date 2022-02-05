@@ -41,4 +41,4 @@ ini_set( 'display_errors', 1 );
 
 #$wgStyleDirectory = "{$IP}/skins";
 
-$wgStylePath = "$wgScriptPath/skins";
+#$wgStylePath = "$wgScriptPath/skins";
