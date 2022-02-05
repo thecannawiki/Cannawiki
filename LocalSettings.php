@@ -24,7 +24,6 @@ $wgServer = "https://cannawiki.herokuapp.com/";
 
 
 ## Database settings
-$url = parse_url(getenv("CLEARDB_DATABASE_URL"));
 
 $wgDBtype = "mysql";
 $wgDBserver = getenv("DB_IP");
