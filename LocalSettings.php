@@ -27,10 +27,10 @@ $wgServer = "https://cannawiki.herokuapp.com/";
 $url = parse_url(getenv("CLEARDB_DATABASE_URL"));
 
 $wgDBtype = "mysql";
-$wgDBserver = $url["host"];
-$wgDBname = substr($url["path"], 1);
-$wgDBuser = $url["user"];
-$wgDBpassword = $url["pass"];
+$wgDBserver = getenv("DB_IP");
+$wgDBname = "cannawiki";
+$wgDBuser = getenv("DB_USER");
+$wgDBpassword = getenv("DB_PASS");
 
 $wgShowExceptionDetails = true;
 $wgShowDBErrorBacktrace = true;
