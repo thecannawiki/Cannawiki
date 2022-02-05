@@ -35,3 +35,6 @@ $wgDBpassword = getenv("DB_PASS");
 $wgShowExceptionDetails = true;
 $wgShowDBErrorBacktrace = true;
 $wgShowSQLErrors = true;
+
+wfLoadSkin( 'Vector' );
+$wgDefaultSkin = 'vector';
