@@ -40,7 +40,7 @@ ini_set( 'display_errors', 1 );
 
 $wgStyleDirectory = "{$IP}/skins";
 wfLoadSkin( 'Vector' );
-$wgDefaultSkin = "vector";
+$wgDefaultSkin = 'vector';
 
 
 #$wgStylePath = "$wgScriptPath/skins";
