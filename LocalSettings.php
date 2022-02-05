@@ -35,6 +35,9 @@ $wgShowExceptionDetails = true;
 $wgShowDBErrorBacktrace = true;
 $wgShowSQLErrors = true;
 
+error_reporting( -1 );
+ini_set( 'display_errors', 1 );
+
 
 #$wgStyleDirectory = "{$IP}/skins";
 
