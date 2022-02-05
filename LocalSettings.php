@@ -35,5 +35,6 @@ $wgShowExceptionDetails = true;
 $wgShowDBErrorBacktrace = true;
 $wgShowSQLErrors = true;
 
-wfLoadSkin( 'Vector' );
+
 $wgDefaultSkin = 'vector';
+wfLoadSkin( 'Vector' );
