@@ -16,15 +16,13 @@ $wgSitename = "CannaWiki";
 ## (like /w/index.php/Page_title to /wiki/Page_title) please see:
 ## https://www.mediawiki.org/wiki/Manual:Short_URL
 $wgScriptPath = "";
-$wgFavicon = "/CannaWiki/favicon.ico";
+#$wgFavicon = "/CannaWiki/favicon.ico";
 
 ## The protocol and server name to use in fully-qualified URLs
 $wgServer = "https://cannawiki.herokuapp.com/";
-
 $wgResourceBasePath = $wgScriptPath;
 
 ## Database settings
-
 $wgDBtype = "mysql";
 $wgDBserver = getenv("DB_IP");
 $wgDBname = "cannawiki";
@@ -34,9 +32,9 @@ $wgDBpassword = getenv("DB_PASS");
 /* $wgShowExceptionDetails = true;
 $wgShowDBErrorBacktrace = true;
 $wgShowSQLErrors = true;
-
+*/
 error_reporting( E_ALL );
-ini_set( 'display_errors', 1 ); */
+ini_set( 'display_errors', 1 ); 
 
 $wgStyleDirectory = "{$IP}/skins";
 wfLoadSkin( 'Vector' );
