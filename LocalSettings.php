@@ -31,12 +31,12 @@ $wgDBname = "cannawiki";
 $wgDBuser = getenv("DB_USER");
 $wgDBpassword = getenv("DB_PASS");
 
-$wgShowExceptionDetails = true;
+/* $wgShowExceptionDetails = true;
 $wgShowDBErrorBacktrace = true;
 $wgShowSQLErrors = true;
 
 error_reporting( E_ALL );
-ini_set( 'display_errors', 1 );
+ini_set( 'display_errors', 1 ); */
 
 $wgStyleDirectory = "{$IP}/skins";
 wfLoadSkin( 'Vector' );
